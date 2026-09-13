@@ -1,32 +1,31 @@
 class Agentops < Formula
   desc "Service inventory, health, deployment, rollback, and backup operations"
-  homepage "https://github.com/wenqiangde/agentsetup"
+  homepage "https://github.com/wenqiangde/agentops"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/wenqiangde/homebrew-agentsetup/releases/download/v3.7.0/agentops-v3.7.0-darwin-arm64"
-      sha256 "2fe9871a23a0af5339bfbd09790aff804a1602e2f487eaf2bf6d278133b6335c"
+      url "https://github.com/wenqiangde/agentops/releases/download/v1.0.0/agentops-v1.0.0-darwin-arm64"
+      sha256 "6ccb5f8bfd7710893fa902cb1e1d0901b590ccc31c66a4bea221feaa2c152ade"
     else
-      url "https://github.com/wenqiangde/homebrew-agentsetup/releases/download/v3.7.0/agentops-v3.7.0-darwin-amd64"
-      sha256 "8ba8e2477593838d6660606c1c4d9e8f8dfc0c32686ddc2a7b4f7f5306ecb786"
+      url "https://github.com/wenqiangde/agentops/releases/download/v1.0.0/agentops-v1.0.0-darwin-amd64"
+      sha256 "9958f6d317fab174f55668136f23691aa2ac7cf12d067c25a741486522d97e55"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/wenqiangde/homebrew-agentsetup/releases/download/v3.7.0/agentops-v3.7.0-linux-arm64"
-      sha256 "af29de847e3a016995824cb270fef09c1fec88ed8cd5d06ef1d8f0e63ab95978"
+      url "https://github.com/wenqiangde/agentops/releases/download/v1.0.0/agentops-v1.0.0-linux-arm64"
+      sha256 "7c32efee2384a35cfba3bd234c4186603cfa9a25c62f3b7c6f5ee0434eba4aac"
     else
-      url "https://github.com/wenqiangde/homebrew-agentsetup/releases/download/v3.7.0/agentops-v3.7.0-linux-amd64"
-      sha256 "0d1410ca3819c86a9854bc796265fc620ff9453acf0c5e38d992554bfb852cfd"
+      url "https://github.com/wenqiangde/agentops/releases/download/v1.0.0/agentops-v1.0.0-linux-amd64"
+      sha256 "c81227dbfffec90f36683cbcaf2783acdd661b6661f5d3bd5fc99e4412563276"
     end
   end
 
   def install
     bin.install Dir["agentops-*"].first => "agentops"
     chmod 0755, bin/"agentops"
-
   end
 
   test do
