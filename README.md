@@ -1,7 +1,7 @@
-# Homebrew Tap For AgentSetup
+# Homebrew Tap For Agent Tools
 
 This repository is the public Homebrew tap and binary distribution channel for
-AgentSetup.
+AgentSetup and AgentOps.
 
 AgentSetup installs and syncs reusable agent rules, skills, and templates into
 configured projects.
@@ -11,14 +11,15 @@ configured projects.
 Install directly:
 
 ```bash
-brew install wenqiangde/agentsetup/agentsetup
+brew install wenqiangde/agent-tools/agentsetup
 ```
 
 Or tap first:
 
 ```bash
-brew tap wenqiangde/agentsetup
+brew tap wenqiangde/agent-tools
 brew install agentsetup
+brew install agentops
 ```
 
 Verify the install:
@@ -244,7 +245,7 @@ runtime data under `~/.agentsetup`.
 This tap's formula downloads public release assets from this repository:
 
 ```text
-https://github.com/wenqiangde/homebrew-agentsetup/releases
+https://github.com/wenqiangde/homebrew-agent-tools/releases
 ```
 
 The AgentSetup CLI source repository is:
