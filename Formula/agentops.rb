@@ -5,21 +5,21 @@ class Agentops < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/wenqiangde/agentops/releases/download/v1.4.0/agentops-v1.4.0-darwin-arm64"
-      sha256 "8edd94c14b8260b4bb628312f905214f35ca7703a8e7794708946654eef6ea17"
+      url "https://github.com/wenqiangde/agentops/releases/download/v1.4.1/agentops-v1.4.1-darwin-arm64"
+      sha256 "0263bb00903d466c1ee31c513181cde692caa7d7e80317012f619cab71bd8591"
     else
-      url "https://github.com/wenqiangde/agentops/releases/download/v1.4.0/agentops-v1.4.0-darwin-amd64"
-      sha256 "badc2aff631adb05c1e6e7a8b48fa59f4e531e80dbdddabe010d08d32fc9cd8b"
+      url "https://github.com/wenqiangde/agentops/releases/download/v1.4.1/agentops-v1.4.1-darwin-amd64"
+      sha256 "2accf35cf10242f8facc5c6029bfaa263905f34f8a2858de156d8d944f7e69fa"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/wenqiangde/agentops/releases/download/v1.4.0/agentops-v1.4.0-linux-arm64"
-      sha256 "56bd8da3efb10ca01dcd454ee7d00061d3ef0b0f7a906c58f26b58fbbf81491f"
+      url "https://github.com/wenqiangde/agentops/releases/download/v1.4.1/agentops-v1.4.1-linux-arm64"
+      sha256 "6ec7aace0aa0625f3f6105790503b2a3a8732c3e788916e1a25dc21e53d9e0af"
     else
-      url "https://github.com/wenqiangde/agentops/releases/download/v1.4.0/agentops-v1.4.0-linux-amd64"
-      sha256 "16695961986125fb1249ec67832ac4a4512d73c6c21b4e02f7b83cb8dbd5fc96"
+      url "https://github.com/wenqiangde/agentops/releases/download/v1.4.1/agentops-v1.4.1-linux-amd64"
+      sha256 "ae5782344855f4cc074254a431383fa520fafbefeff1c871706a620f353b97e0"
     end
   end
 
