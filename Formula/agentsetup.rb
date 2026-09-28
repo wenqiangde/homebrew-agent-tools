@@ -5,21 +5,21 @@ class Agentsetup < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/wenqiangde/homebrew-agent-tools/releases/download/v4.1.4/agentsetup-v4.1.4-darwin-arm64"
-      sha256 "8f83e0ddce55cf3f4188bc44909e04e4e201295b64c554459a204d49bf4bc6b3"
+      url "https://github.com/wenqiangde/homebrew-agent-tools/releases/download/v4.1.5/agentsetup-v4.1.5-darwin-arm64"
+      sha256 "653548f40ec186c6da6dd1c600387c967962c6b46158f3d719b7762d4bfe8c8a"
     else
-      url "https://github.com/wenqiangde/homebrew-agent-tools/releases/download/v4.1.4/agentsetup-v4.1.4-darwin-amd64"
-      sha256 "9cbfdb6be747aa3bb43ec8c68b7d7396146d480b9c2ea56ed6fb39c7e9b7e2d7"
+      url "https://github.com/wenqiangde/homebrew-agent-tools/releases/download/v4.1.5/agentsetup-v4.1.5-darwin-amd64"
+      sha256 "aa0ef2d5072f82ce25b6d68c419dfdebdc9fcfe71406ea5fe5d3a8f184a7d9d5"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/wenqiangde/homebrew-agent-tools/releases/download/v4.1.4/agentsetup-v4.1.4-linux-arm64"
-      sha256 "eb544ec6dfefd7ff3a821693d4c705ab80f6c0080b871d3896add589e76b10ef"
+      url "https://github.com/wenqiangde/homebrew-agent-tools/releases/download/v4.1.5/agentsetup-v4.1.5-linux-arm64"
+      sha256 "11b91adb2e5be7e9b8404a458a621f8e7fcbcb6d5afec9e07b32b584822b7a7b"
     else
-      url "https://github.com/wenqiangde/homebrew-agent-tools/releases/download/v4.1.4/agentsetup-v4.1.4-linux-amd64"
-      sha256 "77ae62e8eca02c98d27fabb872f9bd9f0f93cffb87030851a4d0afda10c9c3b7"
+      url "https://github.com/wenqiangde/homebrew-agent-tools/releases/download/v4.1.5/agentsetup-v4.1.5-linux-amd64"
+      sha256 "c569d260c29b82d3b3dd4cc1940181f3877543628a19bca80d4475d50daf6c3d"
     end
   end
 
